@@ -47,16 +47,19 @@ Subheader color can either be the secondary grey text value (54% black) or t */
   font: 14pt Roboto, Noto, sans-serif;
   line-height: 48px;
   padding: 0 16px;
+  border-top: 1px solid rgba(0,0,0,0.11);
+  }
+main h1:first-of-type {
+  border-top: 0;
 }
 ul {
   padding: 0 0 0 2em;
   margin: 0;
 }
 p, li {
-  padding: 0;
-  margin: 0.2em;
-  color: #333;
-  list-style: none outside none;
+  padding: 0 16px;
+  margin: 0.2em 0;
+  color: rgba(0,0,0,0.84);
 }
 
 table.list {
@@ -64,20 +67,27 @@ table.list {
  padding: 0 16px;
 }
 table.list td {
-  height: 48px;
+  height: 24px;
   vertical-align: top;
   font-weight: bold;
   color: rgba(0,0,0,0.84);
+  width: 10%;
+  min-width: 8em;
 }
 table.list td + td {
   font-weight: normal;
+  padding-left: 0;
+  width: 90%;
 }
 table.list tr.subitem td {
   font-weight: normal;
   font-size: 90%;
   padding-left: 16px;
+  color: rgba(0,0,0,0.73);
 }
-
+table.list tr.subitem td + td {
+  padding-left: 0;
+}
 </style>
 <body>
 <header>
@@ -113,7 +123,7 @@ table.list tr.subitem td {
 <tr><td>Temporis</td><td> Physical + Survival vs. Physical + Willpower</td></tr>
 <tr><td>Thanatosis</td><td> Mental + Medicine vs. Mental + Willpower</td></tr>
 <tr><td>Thaumaturgy</td><td> Mental + Occult vs. Mental + Willpower</td></tr>
-<tr class="subitem"><td>Physical Attacks</td><td> Mental + Occult vs. Physical + Dodge</td></tr>
+<tr class="subitem"><td>Phys. Attacks</td><td> Mental + Occult vs. Physical + Dodge</td></tr>
 <tr><td>Valeren</td><td> Mental + Medicine vs. Mental + Willpower</td></tr>
 <tr><td>Vicissitude</td><td> NA</td></tr>
 <tr><td>Visceratika</td><td> Mental + Athletics vs. Mental + Willpower</td></tr>
@@ -137,13 +147,8 @@ table.list tr.subitem td {
 <h1 id="mass-combat">Mass Combat</h1>
 
 <table class="list">
-<tr><td>Max Attacks    </td><td>Per Round   </td></tr>
-<tr><td>    </td><td>2 Physical   </td></tr>
-<tr><td>    </td><td>1 Social   </td></tr>
-<tr><td>    </td><td>1 Mental   </td></tr>
-<tr><td>    </td><td>2 Physical per Celerity Round   </td></tr>
-</table>
-<ul>
+<p><strong>Max Attacks per round</strong> are 2 Physical, 1 Social, 1 Mental, plus 2 Physical (only!) per Celerity round.</p>
 
+<p>&nbsp;</p>
 </article></main>
 </body></html>
