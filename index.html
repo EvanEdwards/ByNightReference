@@ -6,33 +6,47 @@
 body {
   font: Roboto, Noto, sans-serif;
   margin:0;
-  padding:0;
-  background: #eee;
+  padding: 48px 0 0 0;
+  background: #fff;
 }
 
 body > header {
   background: #004D40;
-  padding: 0.5em 1em;
+  box-shadow: 0 0 6px rgba(0,0,0,0.84);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding:0;
+  margin:0;
+  width:100%;
 }
 body > header h1 {
   color: #eee;
-  padding: 0;
+  padding: 0 1em;
+  font: 20pt Roboto, Noto, sans-serif;;
   margin: 0;
+  line-height: 48px;
 }
 
 article {
-  margin: 1em;
-  padding: 0.5em 1em 1em 1em;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+  margin: 0;
+  padding: 0;
+  border: 0; 
+  border-radius: 0;
+  box-shadow: 0;
   background: #fff;
 }
 
-h1 {
-  font: bold 1.3em Roboto, Noto, sans-serif;
-  padding: 0.5em 0 0 0;
-  margin: 0;
+main h1 {
+  /* Tile height: 48dp
+Subheader font: Roboto Medium 14sp
+
+Subheader color can either be the secondary grey text value (54% black) or t */
+
+  color:#004D40;
+  font: 14pt Roboto, Noto, sans-serif;
+  line-height: 48px;
+  padding: 0 16px;
 }
 ul {
   padding: 0 0 0 2em;
@@ -42,6 +56,26 @@ p, li {
   padding: 0;
   margin: 0.2em;
   color: #333;
+  list-style: none outside none;
+}
+
+table.list {
+ border: 0;
+ padding: 0 16px;
+}
+table.list td {
+  height: 48px;
+  vertical-align: top;
+  font-weight: bold;
+  color: rgba(0,0,0,0.84);
+}
+table.list td + td {
+  font-weight: normal;
+}
+table.list tr.subitem td {
+  font-weight: normal;
+  font-size: 90%;
+  padding-left: 16px;
 }
 
 </style>
@@ -50,56 +84,66 @@ p, li {
 <h1>☥ By Night Reference</h1>
 </header>
 
+<main>
 <article>
-<h1 id="general">General</h1>
-<ul>
-<li>Degeneration: Mental + Willpower vs. 10 + Level of Sin</li>
-</ul>
-<h1 id="combat">Combat</h1>
-<ul>
-<li>Initiative: Highest of Mental or Physical Attributes</li>
-<ul>
-<li>Ties broken by: Highest Mental &gt; Highest Physical &gt; Highest Social &gt; Randomly (RPS)</li>
-</ul>
-<li>Physical Attack: Physical + Melee/Brawl/Firearms + Bonus vs. Physical + Dodge</li>
-</ul>
-<h1 id="mass-combat">Mass Combat</h1>
-<ul>
-<li>Max Attacks Per Round</li>
-<li>2 Physical</li>
-<li>1 Social</li>
-<li>1 Mental</li>
-<li>2 Physical per Celerity Round (no mental/social).</li>
-</ul>
+
+
 <h1 id="disciplines">Disciplines</h1>
+<table class="list">
+<tr><td>Animalism</td><td> Social + Animal Ken vs. Social + Willpower</td></tr>
+<tr><td>Auspex</td><td> Mental + Investigation vs. Mental + Willpower</td></tr>
+<tr><td>Celerity</td><td> NA</td></tr>
+<tr><td>Chimestry</td><td> Social + Subterfuge vs. Social + Willpower</td></tr>
+<tr><td>Daimoinon</td><td> Mental + Academics vs. Mental + Willpower</td></tr>
+<tr><td>Dementation</td><td> Social + Empathy vs. Social + Willpower</td></tr>
+<tr><td>Dominate</td><td> Mental + Intimidation vs. Mental + Willpower</td></tr>
+<tr><td>Fortitude</td><td> NA</td></tr>
+<tr><td>Necromancy</td><td> Social + Occult vs. Social + Willpower</td></tr>
+<tr><td>Melpominee</td><td> Social + Subertuge vs. Social + Willpower</td></tr>
+<tr><td>Mytherceria</td><td> Mental + Academics vs. Mental + Willpower</td></tr>
+<tr><td>Obeah</td><td> Mental + Medicine vs. Mental + Willpower</td></tr>
+<tr><td>Obfuscate</td><td> Mental + Stealth vs. Mental + Willpower</td></tr>
+<tr class="subitem"><td>vs. Auspex</td><td> Mental + Willpower/Stealth vs. Mental + Investigation</td></tr>
+<tr><td>Obtenebration</td><td> NA</td></tr>
+<tr><td>Potence</td><td> NA</td></tr>
+<tr><td>Presence</td><td> Social + Leadership vs. Social + Wilpower</td></tr>
+<tr><td>Protean</td><td> NA</td></tr>
+<tr><td>Quietus</td><td> Mental + Athletics vs. Mental + Willpower</td></tr>
+<tr><td>Serpentis</td><td> Social + Subterfuge vs. Social + Willpower</td></tr>
+<tr><td>Temporis</td><td> Physical + Survival vs. Physical + Willpower</td></tr>
+<tr><td>Thanatosis</td><td> Mental + Medicine vs. Mental + Willpower</td></tr>
+<tr><td>Thaumaturgy</td><td> Mental + Occult vs. Mental + Willpower</td></tr>
+<tr class="subitem"><td>Physical Attacks</td><td> Mental + Occult vs. Physical + Dodge</td></tr>
+<tr><td>Valeren</td><td> Mental + Medicine vs. Mental + Willpower</td></tr>
+<tr><td>Vicissitude</td><td> NA</td></tr>
+<tr><td>Visceratika</td><td> Mental + Athletics vs. Mental + Willpower</td></tr>
+</table>
+
+<h1 id="general">Miscellaneous</h1>
+<table class="list">
+<tr><td>Degeneration</td><td> Mental + Willpower vs. 10 + Level of Sin</td></tr>
+</table>
+
+
+<h1 id="combat">Personal Combat</h1>
+<table class="list">
+<tr><td>  Initiative  </td><td> Highest of Mental or Physical Attributes  </td></tr>
+<tr class="subitem"><td> Ties broken by   </td><td> Highest Mental &gt; Physical &gt; Social &gt; RPS  </td></tr>
+<tr><td>Physical Attack    </td><td>Physical + Melee/Brawl/Firearms + Bonus vs. Physical + Dodge   </td></tr>
+
+</table>
+
+
+<h1 id="mass-combat">Mass Combat</h1>
+
+<table class="list">
+<tr><td>Max Attacks    </td><td>Per Round   </td></tr>
+<tr><td>    </td><td>2 Physical   </td></tr>
+<tr><td>    </td><td>1 Social   </td></tr>
+<tr><td>    </td><td>1 Mental   </td></tr>
+<tr><td>    </td><td>2 Physical per Celerity Round   </td></tr>
+</table>
 <ul>
-<li>Animalism: Social + Animal Ken vs. Social + Willpower</li>
-<li>Auspex: Mental + Investigation vs. Mental + Willpower</li>
-<li>Celerity: NA</li>
-<li>Chimestry: Social + Subterfuge vs. Social + Willpower</li>
-<li>Daimoinon: Mental + Academics vs. Mental + Willpower</li>
-<li>Dementation: Social + Empathy vs. Social + Willpower</li>
-<li>Dominate: Mental + Intimidation vs. Mental + Willpower</li>
-<li>Fortitude: NA</li>
-<li>Necromancy: Social + Occult vs. Social + Willpower</li>
-<li>Melpominee: Social + Subertuge vs. Social + Willpower</li>
-<li>Mytherceria: Mental + Academics vs. Mental + Willpower</li>
-<li>Obeah: Mental + Medicine vs. Mental + Willpower</li>
-<li>Obfuscate: Mental + Stealth vs. Mental + Willpower</li>
-    <ul><li>vs. Auspex: Mental + Willpower/Stealth vs. Mental + Investigation</li></ul>
-<li>Obtenebration: NA</li>
-<li>Potence: NA</li>
-<li>Presence: Social + Leadership vs. Social + Wilpower</li>
-<li>Protean: NA</li>
-<li>Quietus: Mental + Athletics vs. Mental + Willpower</li>
-<li>Serpentis: Social + Subterfuge vs. Social + Willpower</li>
-<li>Temporis: Physical + Survival vs. Physical + Willpower</li>
-<li>Thanatosis: Mental + Medicine vs. Mental + Willpower</li>
-<li>Thaumaturgy: Mental + Occult vs. Mental + Willpower</li>
-    <ul><li>Physical Attacks: Mental + Occult vs. Physical + Dodge</li></ul>
-<li>Valeren: Mental + Medicine vs. Mental + Willpower</li>
-<li>Vicissitude: NA</li>
-<li>Visceratika: Mental + Athletics vs. Mental + Willpower</li>
-</ul>
-</article>
+
+</article></main>
 </body></html>
