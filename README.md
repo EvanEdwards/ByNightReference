@@ -8,7 +8,7 @@ A Quick Reference for LARPs
 
 <p>Currently we only support Vampire the Masquerade, but will add an option for Werewolf and other systems as they are officially released.</p>
 
-<h4><img src="icon-128.png">The app is currently available to sideload on Android (<a href="https://www.google.com/search?q=enable+unknown+sources+android" target=_blank>how?</a>).<br>
+<h4><img src="http://nashvilleunveiled.com/a/icon-128.png">The app is currently available to sideload on Android (<a href="https://www.google.com/search?q=enable+unknown+sources+android" target=_blank>how?</a>).<br>
 <a href="http://nashvilleunveiled.com/a/ByNightReference-debug.apk">Click here for the alpha version.</a></h4>
 
 <h2>To Do</h1>
